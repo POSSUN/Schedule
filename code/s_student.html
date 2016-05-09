@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/calendar.css" media="screen">
+    <link rel="stylesheet" href="../css/sc.css">
+
+</head>
+<body>
+    <div class="container" style="border: 1px solid #ffeeee;">
+        <div class="row">
+            <div class="col-md-1">
+                <img src="holder.js/50x50" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>教务管理系统</h2>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="holder.js/50x50" alt="">
+                <p>学生</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="calendar"></div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>新闻标题</h3>
+                    </div>
+                    <div class="panel-body">
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                        高老板的公司开张了!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered table-striped table-hover text-center">
+                    <tr>
+                        <th colspan="6" class="text-center sc-th">课表</th>
+                    </tr>
+                    <tr>
+                        <th colspan="6" class="text-right">
+                            班级:<span>高一3班</span>
+                            <span>...</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>周一</td>
+                        <td>周二</td>
+                        <td>周三</td>
+                        <td>周四</td>
+                        <td>周五</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr><tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr><tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr><tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui-datepicker.min.js"></script>
+    <script>
+        $('#calendar').datepicker({
+            inline: true,
+            firstDay: 1,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        });
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/holder.js"></script>
+</body>
+</html>
