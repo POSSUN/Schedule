@@ -6,4 +6,38 @@
     font-size: 16px;
 }
 
-.sc-th 
+.op-panel {
+    width: 60%;
+    height: 250px;
+    margin: auto 72px;
+    padding: 10px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.op-panel-b {
+    background-color: #337ab7;
+}
+
+.op-panel-g {
+    background-color: #4e9c78;
+}
+
+.op-panel-o {
+    background-color: #c08152;
+}
+
+.op-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.op-desc {
+    margin: 20px auto;
+}
