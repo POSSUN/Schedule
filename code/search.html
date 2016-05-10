@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询课表</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/sc.css">
+
+</head>
+<body>
+<div class="container" style="">
+    <div class="row">
+        <div class="col-md-1">
+            <img src="holder.js/50x50" alt="">
+        </div>
+        <div class="col-md-6">
+            <h2>教务管理系统</h2>
+        </div>
+        <div class="col-md-5 text-center">
+            <img src="../images/admin.png" alt="" class="img-head">
+            <p>管理员</p>
+        </div>
+    </div>
+    <div class="row text-right" style="margin-bottom: 10px;">
+        <div class="col-md-12">
+            <a href="javascript: ;"onClick="javascript: history.back(-1);">
+                <button class="btn btn-default">返回</button>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form action="" class="form-horizontal">
+                <div class="form-group">
+                    <label for="" class="col-md-2 control-label">班级</label>
+                    <div class="col-md-10">
+                        <select name="" id="" class="form-control">
+                            <option value="" class="dp-select">测试1</option>
+                            <option value="" class="dp-select">测试2</option>
+                            <option value="" class="dp-select">测试3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <button class="btn btn-primary">查找</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-bordered table-striped table-hover text-center">
+                <thead class="bg-info">
+                    <tr>
+                        <th>课程</th>
+                        <th>教师</th>
+                        <th>时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>体育</td>
+                        <td>高老师</td>
+                        <td>周一第三节</td>
+                        <td>
+                            <button type="botton" class="btn btn-default btn-info btn-xs"  data-toggle="modal" data-target="#myModal">
+                                编辑
+                            </button>
+                            <button type="botton" class="btn btn-default btn-danger btn-xs">
+                                删除
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">修改课程</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="" class="col-md-2 control-label">修改为</label>
+                            <div class="col-md-10">
+                                <select name="" id="" class="form-control">
+                                    <option value="" class="dp-select">测试1</option>
+                                    <option value="" class="dp-select">测试2</option>
+                                    <option value="" class="dp-select">测试3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+</body>
+</html>
